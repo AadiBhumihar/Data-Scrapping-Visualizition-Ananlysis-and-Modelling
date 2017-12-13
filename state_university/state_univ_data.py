@@ -82,7 +82,7 @@ def clear_row(x) :
 html = urlopen("https://en.wikipedia.org/wiki/List_of_state_universities_in_the_United_States")
 html_soup = BeautifulSoup(html, 'html.parser')
 
-	#### Get beer Data ####
+	#### Get state university Data ####
 state_array = get_state(html_soup)
 stt_uni_list = get_state_wise_university_list(html_soup ,state_array)
 	##### Converting into dataframe####
